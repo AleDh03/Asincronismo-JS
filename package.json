@@ -1,0 +1,19 @@
+{
+  "name": "asynchronism",
+  "version": "1.0.0",
+  "description": "trabajar con asynchronisms en JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js"
+  },
+  "keywords": [
+    "callbacks",
+    "promise",
+    "async"
+  ],
+  "author": "Alejandro",
+  "license": "MIT ",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
