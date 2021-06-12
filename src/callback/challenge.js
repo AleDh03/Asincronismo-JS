@@ -2,9 +2,7 @@
 
 //Instancia del request
 //Permite hacer peticiones a algún servidor en la nube
-
-let XMLHttpRe
-quest = require('xmlhttprequest').XMLHttpRequest;
+let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 let API = 'https://rickandmortyapi.com/api/character/';
 
 function fetchData(url_api, callback) {
@@ -13,7 +11,7 @@ function fetchData(url_api, callback) {
     /* A la referencia xhttp le pasamos un LLAMADO 'open' donde:
     parametro1 = el método, parametro2 = URL,
     parametro3 = verificación si asíncrono o no valor por defecto TRUE*/
-    xhttp.open('GET', url_api, true);
+    xhttp.open('GET', url_api, true);clear
     // Cuando el estado del objecto cambia, ejecuta la función
     xhttp.onreadystatechange = function (event) {
         /* los estados que pueden tener son:
@@ -22,7 +20,7 @@ function fetchData(url_api, callback) {
         estado 2: ya se cargo
         estado 3: ya hay información
         estado 4: solicitud completada
-        PD: no olvidar  que al estarse trabajando con una API 
+        PD: no olvidar  que al estarse trabajando con una API
         externa osea un servidor por lo que depende del servidor
         cuanto demore cada estado lo que hago es un pedido por datos (request) y solo aplicar una lógica.*/
         if(xhttp.readyState === 4){
